@@ -20,7 +20,8 @@
   font-size: 1rem;
   font-family: monospace;
   max-width: 350px;
-  min-height: 140px;
+  width: 100%;
+  min-height: max(150px, 25vh);
   overflow: hidden;
 }
 

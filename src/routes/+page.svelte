@@ -54,22 +54,35 @@ const haikus: haikuItem[] = [
 
 <main>
   <section class="section-wrap">
-    <div class="f-col f-s-s">
-      <h1>Welcome to CSS Haiku</h1>
+    <div class="content-wrap-thin">
+      <div class="f-col f-s-s">
+        <h1>Welcome to CSS Haiku</h1>
+        <div>
+          <p>CSS haikus</p>
+          <p>an experimental thing</p>
+          <p>to celebrate styles.</p>
+        </div>
+      </div>
       <div>
-        <p>CSS haikus</p>
-        <p>an experimental thing</p>
-        <p>to celebrate styles.</p>
+        <details>
+          <summary>Why CSS Haikus?</summary>
+          <div class="f-col">
+            <p>...</p>
+          </div>
+        </details>
       </div>
     </div>
   </section>
-  <section class="section_wrap">
-
-    <div class="g-col-4">
-      {#each haikus as haiku}
-       <!-- <CSSHaiku haikuId="clearsky">&Tab;background: dodgerblue;<br>opacity: nought point eight;<br>&Tab;color: floralwhite;</CSSHaiku> -->
-        <CSSHaiku haikuId={haiku.haikuId} haiku={haiku.haikuText}></CSSHaiku>
-      {/each}
+  <section class="section-wrap">
+    <div class="content-wrap-thin">
+      <div class="f-col f-c-c gap-xxl">
+        {#each haikus as haiku}
+         <!-- <CSSHaiku haikuId="clearsky">&Tab;background: dodgerblue;<br>opacity: nought point eight;<br>&Tab;color: floralwhite;</CSSHaiku> -->
+          <CSSHaiku haikuId={haiku.haikuId} haiku={haiku.haikuText}></CSSHaiku>
+        {/each}
+      </div>
     </div>
+
+    
   </section>
 </main>
