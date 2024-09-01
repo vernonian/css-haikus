@@ -31,7 +31,12 @@ import haikus from '$lib/data/haikus';
       <div class="f-col f-c-c gap-xxl">
         {#each haikus as haiku}
          <!-- <CSSHaiku haikuId="clearsky">&Tab;background: dodgerblue;<br>opacity: nought point eight;<br>&Tab;color: floralwhite;</CSSHaiku> -->
-          <CSSHaiku haikuId={haiku.haikuId} haiku={haiku.haikuText}></CSSHaiku>
+          <CSSHaiku 
+            haikuId={haiku.haikuId} 
+            haiku={haiku.haikuText}
+            haikuCSS={haiku.haikuCSS}
+            haikuLabel={haiku.haikuTitleLabel}
+          />
         {/each}
       </div>
     </div>

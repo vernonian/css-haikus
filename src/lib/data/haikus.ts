@@ -1,4 +1,4 @@
-import HaikuItemType from '$lib/data/types.ts';
+import type { HaikuItemType } from '$lib/data/types.ts';
 
 const haikus: HaikuItemType[] = [
   {
