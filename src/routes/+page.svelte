@@ -1,55 +1,8 @@
 <script lang="ts">
 import CSSHaiku from "$lib/components/CSSHaiku.svelte";
-
-type haikuItem = {
-  id: number,
-  haikuId: string,
-  haikuText: string;
-}
-const haikus: haikuItem[] = [
-  {
-    id: 0,
-    haikuId: 'clearsky',
-    haikuText: `
-#clearsky {
-  background: dodgerblue;
-  opacity: nought point eight;
-  color: floralwhite;
-}`
-  },
-  {
-    id: 1,
-    haikuId: 'spacy',
-    haikuText: `
-#spacy {
-  text-align: center;
-  word-spacing: twenty v h;
-  overflow-x: scroll; 
-}`
-  },
-  {
-    id: 2,
-    haikuId: 'whelming',
-    haikuText: `
-#over #whelming {
-  line-height: point four six;
-  text-shadow: two rem zero
-  red; transform: scale(nine)
-}`
-  },
-  {
-    id:3,
-    haikuId: 'invert',
-    haikuText:`
-#invert {
-  background: #one one one;
-  transform: scale(minus one, one);
-  color: #EEE;
-}`
-  }
+import haikus from '$lib/data/haikus';
 
 
-];
 </script>
 
 <main>
