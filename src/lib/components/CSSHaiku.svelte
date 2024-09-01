@@ -6,7 +6,8 @@
   export let haikuLabel: string;
 </script>
 
-<div>
+<div class="f-col">
+  <h2>{haikuLabel}.</h2>
   <div id={haikuId} class="css-haiku-box">
     <pre>
       {haiku}
@@ -16,7 +17,7 @@
   <details>
     <summary>CSS</summary>
     <div class="css-box">
-
+      {haikuCSS}
     </div>
   </details>
   
