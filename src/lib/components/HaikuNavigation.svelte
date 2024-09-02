@@ -14,10 +14,13 @@
   nav {
     padding: var(--m);
     border-radius: var(--xs);
-    width: fit-content;
+    width: 100%;
   }
-  ol {
-    list-style: none;
+
+  @media screen and (min-width: 768px) {
+    nav {
+      width: fit-content;
+    }
   }
 
   .nav-link {
