@@ -1,5 +1,6 @@
 interface HaikuItem {
   id: number,
+  haikuBoxId: string,
   haikuId: string,
   haikuTitleLabel: string,
   haikuText: string,

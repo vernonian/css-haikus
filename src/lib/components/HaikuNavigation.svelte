@@ -5,7 +5,7 @@
 <nav class="bg-primary-0 primary-4">
   <ol class="list-wrap">
     {#each haikus as haiku}
-      <li><a class="nav-link" href="#{haiku.haikuId}">#{haiku.haikuId}</a></li>
+      <li><a class="nav-link" href="#haiku-{haiku.haikuId}">{haiku.haikuTitleLabel}</a></li>
     {/each}
   </ol>
 </nav>

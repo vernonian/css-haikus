@@ -1,40 +1,16 @@
-import type { HaikuItemType } from '$lib/data/types.ts';
-
-const haikus: HaikuItemType[] = [
-  {
-    id: 0,
-    haikuBoxId: 'clear',
-    haikuId: 'sky',
-    haikuTitleLabel: `Clearsky`,
-    haikuText: `
-#clearsky {
-  background: dodgerblue;
-  opacity: nought point eight;
-  color: floralwhite;
-}`,
-    haikuCSS: `
-#clearsky {
+/* clear sky */
+#clear {
   background: dodgerblue;
   text-shadow: 0 0 1em;
   color: floralwhite;
 }
-#clearsky:hover {
+#clear:hover {
   text-shadow: 0 0 4em;
   cursor: default;
-}`
-  },
-  {
-    id: 1,
-    haikuBoxId: 'spacy',
-    haikuId: 'spacey',
-    haikuTitleLabel: 'Spacy',
-    haikuText:`
-#spacy {
-  text-align: center;
-  word-spacing: twenty v h;
-  overflow-x: scroll; 
-}`,
-    haikuCSS:`
+}
+/* ### */
+
+/* Spacy */
 #spacy {
   text-align: center;
   word-spacing: 20vh;
@@ -44,20 +20,10 @@ const haikus: HaikuItemType[] = [
   backdrop-filter: none;
   letter-spacing: .9rem;
   cursor: col-resize; 
-}`
-  },
-  {
-    id: 2,
-    haikuBoxId: 'over',
-    haikuId: 'whelming',
-    haikuTitleLabel: 'Whelming',
-    haikuText:`
-#whelming {
-  line-height: point four six;
-  text-shadow: two rem zero
-  red; transform: scale(nine);
-}`,
-    haikuCSS:`
+}
+/* ### */
+
+/* Whelming */
 #over #whelming {
   line-height: .38;
   text-shadow: 3rem 0
@@ -71,6 +37,7 @@ const haikus: HaikuItemType[] = [
   animation: infinite
     tense 1.1s;  
 }
+
 @keyframes tense {
   0% {line-height: 0.35rem; letter-spacing: -1px;}
   20% {line-height: 0.3rem;letter-spacing: 0px;}
@@ -78,21 +45,10 @@ const haikus: HaikuItemType[] = [
   60% {line-height: 0.3rem;letter-spacing: -2px;}
   80% {line-height: 0.38rem; letter-spacing: -1px;}
   100% {line-height: 0.3rem;letter-spacing: 0px;}
-}`
-  },
-  {
-    id: 3,
-    haikuBoxId: 'invert',
-    haikuId: 'inverted',
-    haikuTitleLabel: 'Inverted',
-    haikuText:`
-#invert {
-  background: #one one one;
-  transform: scale(minus one, one);
-  color: #EEE;
 }
-`,
-    haikuCSS:`
+/* ### */
+
+/* Invert */
 #invert {
   background: #111;
   transform: scale(-1, 1);
@@ -102,20 +58,12 @@ const haikus: HaikuItemType[] = [
   background:#EEE;
   transform: scale(1, -1);
   color: #111;
-}`
-  },
-  {
-    id: 4,
-    haikuBoxId: 'stretched',
-    haikuId: 'thin',
-    haikuTitleLabel: 'Thin',
-    haikuText:`
-#thin {
-  text-transform: lowercase;
-  transition: eleven s;
-  transform: scale(six);
-}`,
-    haikuCSS:`
+}
+/* ### */
+
+
+/* V */
+/* Stretched thin */
 #stretched #thin {
   text-transform: lowercase;
   transition: 11s;
@@ -124,20 +72,10 @@ const haikus: HaikuItemType[] = [
 #stretched:hover #thin {
  cursor: ew-resize; 
  transform: scale(8, 1);
-}`
-  },
-  {
-    id: 5,
-    haikuBoxId: 'vi',
-    haikuId: 'distant',
-    haikuTitleLabel: 'Distant',
-    haikuText:`
-#distant {
-  font-size: point nine rem;
-  filter: blur(point one eight rem);
-  color: olivedrab;
-}`,
-    haikuCSS:`
+}
+/* ### */
+
+/* VI - Distant */
 #distant {
   font-size: .9rem;
   filter: blur(.18rem);
@@ -147,21 +85,10 @@ const haikus: HaikuItemType[] = [
   cursor: not-allowed;
   filter: blur(0.06rem);
   color: forestgreen;
-}`
-  },
-  {
-    id: 6,
-    haikuBoxId: 'vii',
-    haikuId: 'panic',
-    haikuTitleLabel: 'Panic',
-    haikuText:`
-#panic {
-  color: orangered;
-  animation: var(--calm-down);
-  line-height: point six six;    
 }
-`,
-    haikuCSS:`
+/* ### */
+
+/* VII - Panic */
 #panic {
   color: orangered;
   animation: var(--calm-down);
@@ -191,24 +118,13 @@ const haikus: HaikuItemType[] = [
   80% { transform: translate(var(--b), var(--b));opacity: 0.7; }
   90% { transform: translate(var(--b), var(--a)); }
   100%{ transform: translate(var(--a), var(--b)); }
-}`
-  },
-  {
-    id: 7,
-    haikuBoxId: 'true',
-    haikuId: 'dissonance',
-    haikuTitleLabel: 'Dissonance',
-    haikuText:`
-#dissonance {
-  background: transparent;
-  animation: var(--transcend);
-  text-align: center;
 }
-`,
-    haikuCSS:`
+/* ### */
+
 #true:hover #dissonance {
   cursor: progress;
 } 
+
 #dissonance {
   background: transparent;
   animation: var(--transcend);
@@ -245,8 +161,3 @@ const haikus: HaikuItemType[] = [
     transform: translate(1.1rem, 0rem);
   }
 }
-`
-  }
-];
-
-export default haikus;

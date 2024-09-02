@@ -1,29 +1,34 @@
 <script lang="ts">
+  // Components
   import Header from '$lib/components/Header.svelte';
   import HaikuNavigation from '$lib/components/HaikuNavigation.svelte';
   import CSSHaiku from "$lib/components/CSSHaiku.svelte";
-  import haikus from '$lib/data/haikus';
   import About from '$lib/components/About.svelte';
 
-
+  // Haiku data
+  import haikus from '$lib/data/haikus';
+  import '$lib/ui/haikus.css';
 </script>
-<Header></Header>
+
+<Header/>
 <main class="section-wrap">
-  <section class="content-wrap main-grid">
+  <div class="main-grid">
     <!-- Left -->
-    <section class="f-col f-e-s">
+    <section class="nav">
       <div class="sticky">
-        <HaikuNavigation/>
+        <div class="f-col f-e-s">
+          <HaikuNavigation/>
+        </div>
       </div>
     </section>
 
     <!-- Middle -->
-    <section>
-      <div class="content-wrap-thin">
-        <div class="f-col f-c-c gap-xxl">
+    <section class="haikus">
+      <!-- <div class="content-wrap-thin"> -->
+        <div class="f-col f-c-c gap-xl">
           {#each haikus as haiku}
-           <!-- <CSSHaiku haikuId="clearsky">&Tab;background: dodgerblue;<br>opacity: nought point eight;<br>&Tab;color: floralwhite;</CSSHaiku> -->
             <CSSHaiku 
+              haikuBoxId={haiku.haikuBoxId}
               haikuId={haiku.haikuId} 
               haiku={haiku.haikuText}
               haikuCSS={haiku.haikuCSS}
@@ -31,18 +36,24 @@
             />
           {/each}
         </div>
-      </div>  
+      <!-- </div>   -->
     </section>
 
     <!-- Right  -->
-    <section>
+    <section class="about">
       <div class="sticky">
         <About/>
       </div>
     </section>
+  </div>
 </main>
 
 <style>
+
+  main.section-wrap {
+    padding-top: 0px;
+  }
+
   .main-grid {
     width: 100%;
     max-width: 100%;
@@ -53,8 +64,14 @@
 
   @media screen and (min-width: 768px) {
     .main-grid {
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr minmax(500px, 1fr) 1fr;
+      grid-template-areas: 'nav haikus about';
     }
+  }
+
+  .haikus {
+    border-top: solid 1px var(--primary-3);
+    
   }
 
   .sticky {
@@ -64,7 +81,7 @@
 
   @media screen and (min-width: 768px) {
     .sticky {
-      width: fit-content;
+      width: 100%;
       position: sticky;
       top: var(--l);
     }

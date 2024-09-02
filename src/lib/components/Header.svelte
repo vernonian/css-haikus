@@ -10,7 +10,7 @@
         <!-- CSS Haiku -->
       </div>
       <div class="title-wrap">
-        <h1 class="heading-2 f-col gap-zero">
+        <h1 class="heading-2 text-center f-col gap-zero">
           <span class="primary-5">CSS Haikus</span>
           <span class="primary-3">an experimental thing</span>
           <span class="primary-3">to celebrate styles.</span>
@@ -25,6 +25,4 @@
 
 <style>
   .banner { padding: var(--s) var(--m); }
-
-  .section-wrap { border-bottom: solid var(--primary-3) 1px;}
 </style>

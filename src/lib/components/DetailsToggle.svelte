@@ -1,10 +1,6 @@
 <script lang="ts">
-
   export let title: String;
-  
-
 </script>
-
 
 <details class="details-toggle f-col">
   <summary class="heading-4 f-row f-c-s gap-xs">{title}</summary>
