@@ -4,14 +4,16 @@
 
 <header>
   <section class="banner bg-primary-3"><p class="body-1 white text-center">Welcome to CSS Haikus. Please enjoy!</p></section>
-  <section>
+  <section class="g-col-1-2-1">
+    <div></div>
     <div>
-      <h1 class="f-col gap-zero">
+      <h1 class="heading-2 f-col gap-zero">
         <span>CSS Haikus</span>
         <span>an experimental thing</span>
         <span>to celebrate styles.</span>
       </h1>
     </div>
+    <div></div>
   </section>
 </header>
 
