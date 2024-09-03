@@ -3,7 +3,7 @@
 </script>
 
 <details class="details-toggle f-col">
-  <summary class="heading-4 f-row f-c-s gap-xs">{title}</summary>
+  <summary class="heading-5 f-row f-c-s gap-xs">{title}</summary>
   <div class="f-col body-2">
     <slot></slot>
   </div>

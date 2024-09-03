@@ -81,7 +81,7 @@
   filter: blur(.18rem);
   color: olivedrab;
 }
-#vi:hover #distant {
+#growing:hover #distant {
   cursor: not-allowed;
   filter: blur(0.06rem);
   color: forestgreen;

@@ -9,7 +9,7 @@
 </script>
 
 <div id="haiku-{haikuId}"class="css-haiku f-col">
-  <h2 class="heading-4">{haikuLabel}</h2>
+  <h2 class="heading-6 primary-5">{haikuLabel}</h2>
   <div id={haikuBoxId} class="css-haiku-box">
     <pre id={haikuId}>
       {haiku}
@@ -38,8 +38,8 @@
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  border: solid 1px black;
-  border-radius: var(--xs);
+  border: solid 1px var(--textcolor-body);
+  border-radius: var(--xxs);
   font-size: 1rem;
   font-family: monospace;
   width: 100%;

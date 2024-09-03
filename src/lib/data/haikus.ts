@@ -5,11 +5,11 @@ const haikus: HaikuItemType[] = [
     id: 0,
     haikuBoxId: 'clear',
     haikuId: 'sky',
-    haikuTitleLabel: `Clearsky`,
+    haikuTitleLabel: `#clearsky`,
     haikuText: `
 #clearsky {
   background: dodgerblue;
-  opacity: nought point eight;
+  text-shadow: nought nought one em;
   color: floralwhite;
 }`,
     haikuCSS: `
@@ -18,6 +18,7 @@ const haikus: HaikuItemType[] = [
   text-shadow: 0 0 1em;
   color: floralwhite;
 }
+
 #clearsky:hover {
   text-shadow: 0 0 4em;
   cursor: default;
@@ -27,7 +28,7 @@ const haikus: HaikuItemType[] = [
     id: 1,
     haikuBoxId: 'spacy',
     haikuId: 'spacey',
-    haikuTitleLabel: 'Spacy',
+    haikuTitleLabel: '#spacy',
     haikuText:`
 #spacy {
   text-align: center;
@@ -40,6 +41,7 @@ const haikus: HaikuItemType[] = [
   word-spacing: 20vh;
   overflow-x: scroll; 
 }
+
 #spacy:hover {
   backdrop-filter: none;
   letter-spacing: .9rem;
@@ -50,11 +52,11 @@ const haikus: HaikuItemType[] = [
     id: 2,
     haikuBoxId: 'over',
     haikuId: 'whelming',
-    haikuTitleLabel: 'Whelming',
+    haikuTitleLabel: '#whelming',
     haikuText:`
 #whelming {
-  line-height: point four six;
-  text-shadow: two rem zero
+  line-height: point three eight;
+  text-shadow: three rem zero
   red; transform: scale(nine);
 }`,
     haikuCSS:`
@@ -66,30 +68,32 @@ const haikus: HaikuItemType[] = [
 #whelming:hover {
   cursor: grabbing;
 }
+
 #over:hover #whelming {
   line-height: .3rem;
   animation: infinite
     tense 1.1s;  
 }
+
 @keyframes tense {
-  0% {line-height: 0.35rem; letter-spacing: -1px;}
-  20% {line-height: 0.3rem;letter-spacing: 0px;}
-  40% {line-height: 0.32rem; letter-spacing: -1px;}
-  60% {line-height: 0.3rem;letter-spacing: -2px;}
-  80% {line-height: 0.38rem; letter-spacing: -1px;}
-  100% {line-height: 0.3rem;letter-spacing: 0px;}
+  0%  { line-height: 0.35rem; letter-spacing: -1px; }
+  20% { line-height: 0.3rem;letter-spacing: 0px; }
+  40% { line-height: 0.32rem; letter-spacing: -1px; }
+  60% { line-height: 0.3rem;letter-spacing: -2px; }
+  80% { line-height: 0.38rem; letter-spacing: -1px; }
+ 100% { line-height: 0.3rem;letter-spacing: 0px; }
 }`
   },
   {
     id: 3,
     haikuBoxId: 'invert',
     haikuId: 'inverted',
-    haikuTitleLabel: 'Inverted',
+    haikuTitleLabel: '#inverted',
     haikuText:`
 #invert {
   background: #one one one;
   transform: scale(minus one, one);
-  color: #EEE;
+  color: #E E E;
 }
 `,
     haikuCSS:`
@@ -98,6 +102,7 @@ const haikus: HaikuItemType[] = [
   transform: scale(-1, 1);
   color: #EEE;
 }
+
 #invert:hover {
   background:#EEE;
   transform: scale(1, -1);
@@ -108,7 +113,7 @@ const haikus: HaikuItemType[] = [
     id: 4,
     haikuBoxId: 'stretched',
     haikuId: 'thin',
-    haikuTitleLabel: 'Thin',
+    haikuTitleLabel: '#thin',
     haikuText:`
 #thin {
   text-transform: lowercase;
@@ -121,6 +126,7 @@ const haikus: HaikuItemType[] = [
   transition: 11s;
   transform: scaleX(6);
 }
+
 #stretched:hover #thin {
  cursor: ew-resize; 
  transform: scale(8, 1);
@@ -128,9 +134,9 @@ const haikus: HaikuItemType[] = [
   },
   {
     id: 5,
-    haikuBoxId: 'vi',
+    haikuBoxId: 'growing',
     haikuId: 'distant',
-    haikuTitleLabel: 'Distant',
+    haikuTitleLabel: '#distant',
     haikuText:`
 #distant {
   font-size: point nine rem;
@@ -143,7 +149,8 @@ const haikus: HaikuItemType[] = [
   filter: blur(.18rem);
   color: olivedrab;
 }
-#vi:hover #distant {
+
+#growing:hover #distant {
   cursor: not-allowed;
   filter: blur(0.06rem);
   color: forestgreen;
@@ -153,7 +160,7 @@ const haikus: HaikuItemType[] = [
     id: 6,
     haikuBoxId: 'vii',
     haikuId: 'panic',
-    haikuTitleLabel: 'Panic',
+    haikuTitleLabel: '#panic',
     haikuText:`
 #panic {
   color: orangered;
@@ -167,28 +174,29 @@ const haikus: HaikuItemType[] = [
   animation: var(--calm-down);
   line-height: .66;    
 }
+
 #panic:hover {
   animation: none;
   cursor: wait; transform:
   scale(.999);
 }
+
 :root {
   --a: 0.03rem;
   --b: -0.03rem;
   --calm-down: shiver infinite both 0.5s;
 }
+
 @keyframes shiver {
-  0%  { transform: translate(var(--b), var(--a));
-    opacity: 0.7;
-  }
+  0%  { transform: translate(var(--b), var(--a)); opacity: 0.7; }
   10% { transform: translate(0,0); }
   20% { transform: translate(var(--a), var(--a)); }
   30% { transform: translate(var(--b), var(--b)); }
   40% { transform: translate(var(--b), var(--a)); }
-  50% { transform: translate(0, 0);}
+  50% { transform: translate(0, 0); }
   60% { transform: translate(var(--a), var(--a)); }
   70% { transform: translate(var(--a), var(--b)); }
-  80% { transform: translate(var(--b), var(--b));opacity: 0.7; }
+  80% { transform: translate(var(--b), var(--b)); opacity: 0.7; }
   90% { transform: translate(var(--b), var(--a)); }
   100%{ transform: translate(var(--a), var(--b)); }
 }`
@@ -197,7 +205,7 @@ const haikus: HaikuItemType[] = [
     id: 7,
     haikuBoxId: 'true',
     haikuId: 'dissonance',
-    haikuTitleLabel: 'Dissonance',
+    haikuTitleLabel: '#dissonance',
     haikuText:`
 #dissonance {
   background: transparent;
@@ -206,14 +214,15 @@ const haikus: HaikuItemType[] = [
 }
 `,
     haikuCSS:`
-#true:hover #dissonance {
-  cursor: progress;
-} 
 #dissonance {
   background: transparent;
   animation: var(--transcend);
   text-align: center;
 }
+
+#true:hover #dissonance {
+  cursor: progress;
+} 
 
 :root {
   --truth: all 0.2s;
@@ -233,7 +242,9 @@ const haikus: HaikuItemType[] = [
       transform: translate(0.55rem, -0.85rem);
       text-shadow: 1.1em 1.7em hotpink;
   }
-  50% {text-shadow: 0.5rem 0.85rem transparent;}
+  50% {
+    text-shadow: 0.5rem 0.85rem transparent;
+  }
   80% {
     color: hotpink;
     text-shadow: var(--vii-a);
