@@ -7,16 +7,16 @@ to celebrate styles.
 ```
 
 ## About 
-CSS Haikus is a collection of eight haikus written as CSS rules. Each haiku is rendered with its own written style.
+[CSS Haikus](#) is a collection of eight haikus written as CSS rules. Each haiku is rendered with its own written style.
 
-1. #clearky
-2. #spacy
-3. #whelming
-4. #inverted
-5. #thin
-6. #distant
-7. #panic
-8. #dissonance
+1. [#clearsky](#clearsky)
+2. [#spacy](#spacy)
+3. [#whelming](#whelming)
+4. [#inverted](#inverted)
+5. [#thin](#thin)
+6. [#distant](#distant)
+7. [#panic](#panic)
+8. [#dissonance](#dissoance)
 
 The haikus appear in between the curly braces, so the selectors are not part of the haiku. Instead, they serve as titles.
 
@@ -50,11 +50,76 @@ Since I wanted to focus on writing them without building out a whole website, I 
 
 ## The Haikus
 
-### `#clearsky`
+### clearsky
 ```
-#clear {
+#clearsky {
   background: dodgerblue;
   text-shadow: 0 0 1em;
   color: floralwhite;
 }
 ```
+
+### spacy
+```
+#spacy {
+  text-align: center;
+  word-spacing: 20vh;
+  overflow-x: scroll; 
+}
+```
+
+### whelming
+```
+#over #whelming {
+  line-height: .38;
+  text-shadow: 3rem 0
+  red; transform: scale(9);
+}
+```
+
+### inverted
+```
+#invert {
+  background: #111;
+  transform: scale(-1, 1);
+  color: #EEE;
+}
+```
+
+### thin
+```
+#stretched #thin {
+  text-transform: lowercase;
+  transition: 11s;
+  transform: scaleX(6);
+}
+```
+
+### distant
+```
+#distant {
+  font-size: .9rem;
+  filter: blur(.18rem);
+  color: olivedrab;
+}
+```
+
+### panic
+```
+#panic {
+  color: orangered;
+  animation: var(--calm-down);
+  line-height: .66;    
+}
+```
+
+### dissonance
+```
+#dissonance {
+  background: transparent;
+  animation: var(--transcend);
+  text-align: center;
+}
+```
+
+The full CSS can be seen on the [project's page](#), or in this repo's `src/lib/ui/haikus.css` file.
