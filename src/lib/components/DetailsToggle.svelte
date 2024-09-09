@@ -13,6 +13,7 @@
   .details-toggle {
     color: var(--primary-4);
     margin-bottom: var(--m);
+    max-width: 100%;
   }
 
   .details-toggle > div {

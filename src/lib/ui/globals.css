@@ -120,7 +120,7 @@
     inset 0px 0px var(--xxs) rgba(30, 30, 30, 0.1);
   --elevation-sunken-1: inset 0px 1px 1px rgba(30, 30, 30, 0.1),
     inset 0px 0px 1px rgba(30, 30, 30, 0.1);
-  --elevation-overflow: inset -4px 0px 6px rgba(30, 30, 30, 0.1);
+  --elevation-overflow: inset -4px -4px 8px rgba(30, 30, 30, 0.05);
   --elevation-raised-1: 0px 1px 1px rgba(30, 30, 30, 0.1),
     0px 0px 1px rgba(30, 30, 30, 0.1);
   --elevation-raised-2: 0px var(--xxs) var(--xxs) rgba(30, 30, 30, 0.1),

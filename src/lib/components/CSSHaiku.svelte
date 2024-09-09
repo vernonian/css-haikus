@@ -57,4 +57,17 @@
 .css-haiku-box pre {
   transition: all 0.2s;
 }
+
+.css-box pre {
+  overflow-x: scroll;
+
+  /* Remove scrollbar */
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none;
+}
+
+.css-box pre::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
 </style>
