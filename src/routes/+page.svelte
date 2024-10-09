@@ -58,28 +58,48 @@
     width: 100%;
     max-width: 100%;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: var(--l);
+    grid-template-areas: 'about' 'haikus';
   }
 
-  @media screen and (min-width: 768px) {
-    .main-grid {
-      grid-template-columns: 1fr minmax(500px, 1fr) 1fr;
-      grid-template-areas: 'nav haikus about';
-    }
+  .nav, .haikus, .nav {
+    max-width: 100%;
+  }
+
+  .nav { 
+    grid-area: nav; 
+    visibility: hidden;
+    display: none;
   }
 
   .haikus {
     border-top: solid 1px var(--primary-3);
-    
+    grid-area: haikus;
   }
+
+  .about { grid-area: about; }
+
+  @media screen and (min-width: 950px) {
+    .main-grid {
+      grid-template-columns: 1fr minmax(500px, 1fr) 1fr;
+      grid-template-areas: 'nav haikus about';
+    }
+
+    .nav {
+      display: block;
+      visibility: visible;
+    }
+  }
+
+
 
   .sticky {
     width: 100%;
     position: relative;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 950px) {
     .sticky {
       width: 100%;
       position: sticky;
